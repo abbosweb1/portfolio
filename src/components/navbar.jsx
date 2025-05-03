@@ -172,7 +172,7 @@ function Navbar() {
                     </div>
                     <img id='bigImg' src={big} alt="" />
 
-                    <div className="form-container">
+                    <div className="form-container">,
                         <form onSubmit={handleFormSubmit}>
                             <input
                                 type="text"
