@@ -79,6 +79,8 @@ function Navbar() {
 
   const [menuOpen, setMenuOpen] = useState(false);
 
+    const [showLanguages, setShowLanguages] = useState(false);
+
     return (
         <>
             <div className="navbarContainer">
@@ -90,16 +92,22 @@ function Navbar() {
                         <img id='backgroundImg' src={background} alt="" />
                         <button className="ShowHide" onClick={() => setMenuOpen(!menuOpen)}>≡</button>
                         <ul className={menuOpen ? 'menu show' : 'menu'}>
-                            <li><a href="#about">{t('about')}</a></li>
-                            <li><a href="#skills">{t('skills')}</a></li>
-                            <li><a href="#portfolio">{t('portfolio')}</a></li>
+                            <li><a id='menua' href="#about">{t('about')}</a></li>
+                            <li><a id='menua' href="#skills">{t('skills')}</a></li>
+                            <li><a id='menua' href="#portfolio">{t('portfolio')}</a></li>
                         </ul>
 
                         <button onClick={handleContactClick}>{t('contactMe')}</button>
-                        <div className="lan">
-                        <button id='lanbutton' onClick={() => changeLanguage("en")}>en</button>
-                        <button id='lanbutton' onClick={() => changeLanguage("ru")}>ru</button>
-                        <button id='lanbutton' onClick={() => changeLanguage("uz")}>uz</button>
+                        <div className='lan2' style={{ textAlign: 'center' }}>
+                        <button onClick={() => setShowLanguages(!showLanguages)}>
+                        🏁
+                        </button>
+
+                        <div id='lanShow' className={`lan ${showLanguages ? 'show' : ''}`}>
+                            <button id='lanbutton' onClick={() => changeLanguage("en")}>en</button>
+                            <button id='lanbutton' onClick={() => changeLanguage("ru")}>ru</button>
+                            <button id='lanbutton' onClick={() => changeLanguage("uz")}>uz</button>
+                        </div>
                         </div>
                     </div>
                 </div>
