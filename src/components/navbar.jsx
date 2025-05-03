@@ -97,9 +97,9 @@ function Navbar() {
 
                         <button onClick={handleContactClick}>{t('contactMe')}</button>
                         <div className="lan">
-                        <button onClick={() => changeLanguage("en")}>en</button>
-                        <button onClick={() => changeLanguage("ru")}>ru</button>
-                        <button onClick={() => changeLanguage("uz")}>uz</button>
+                        <button id='lanbutton' onClick={() => changeLanguage("en")}>en</button>
+                        <button id='lanbutton' onClick={() => changeLanguage("ru")}>ru</button>
+                        <button id='lanbutton' onClick={() => changeLanguage("uz")}>uz</button>
                         </div>
                     </div>
                 </div>
@@ -118,37 +118,37 @@ function Navbar() {
                 </div>
 
                 <div className="readMore">
-                    <h1>IT BERRIES</h1>
-                    <p>{t('description')}</p>
-                    <button>{t('readMore')}</button>
+                    <h1 id='readmoreh1'>IT BERRIES</h1>
+                    <p id='readmorep'>{t('description')}</p>
+                    <button id='readmorebutton'>{t('readMore')}</button>
                 </div>
 
                 <div id='about' className="aboutPAge">
-                    <button>{t('about')}</button>
-                    <p>{t('description')}</p>
-                    <button>{t('explore')}</button>
-                    <img src={icon} alt="" />
+                    <button id='aboutbutton'>{t('about')}</button>
+                    <p id='aboutp'>{t('description')}</p>
+                    <button id='aboutbutton'>{t('explore')}</button>
+                    <img id='aboutimg' src={icon} alt="" />
                 </div>
 
                 <div className="designPage">
                     <div className="twoDesign">
                         <div className="design">
-                            <img src={klyuch} alt="" />
-                            <h1>{t('design')}</h1>
-                            <p>{t('serviceText')}</p>
+                            <img id='design' src={klyuch} alt="" />
+                            <h1 id='designh1'>{t('design')}</h1>
+                            <p id='designp'>{t('serviceText')}</p>
                         </div>
                         <div className="development">
-                            <img src={development} alt="" />
-                            <h1>{t('development')}</h1>
-                            <p>{t('serviceText')}</p>
+                            <img id='developmentimg' src={development} alt="" />
+                            <h1 id='developmenth1'>{t('development')}</h1>
+                            <p id='developmentp'>{t('serviceText')}</p>
                         </div>
                     </div>
                     <div className="maintenanace">
-                        <img src={maintenanace} alt="" />
-                        <h1>{t('maintenance')}</h1>
-                        <p>{t('serviceText')}</p>
+                        <img id='maintenanaceimg' src={maintenanace} alt="" />
+                        <h1 id='maintenanaceh1'>{t('maintenance')}</h1>
+                        <p id='maintenanacep'>{t('serviceText')}</p>
                     </div>
-                    <img src={icon} alt="" />
+                    <img id='iconimg' src={icon} alt="" />
                 </div>
 
                 <div id='skills' className="skillsPage">

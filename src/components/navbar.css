@@ -290,6 +290,106 @@ a:hover {
     justify-content: center;
     background-color: #1D1D1D;
 }
+@media only screen and (max-width:500px) {
+    .lan{
+        width: 16vw;
+        height: 10vw;
+        /* border: 2px solid red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #lanbutton{
+        width: 6vw;
+        height: 5vw;
+        color: black;
+        font-size: 2vw;
+        border: 2px solid black;
+    }
+    .readMore{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3vw;
+    }
+    #readmoreh1 {
+        font-size: 5vw;
+    }
+    #readmorep {
+        font-size: 3vw;
+    }
+    #readmorebutton {
+        width: 20vw;
+        height: 5vw;
+        font-size: 3vw;
+    }
+    .aboutPAge{
+        /* border: 2px solid red; */
+    }
+    #aboutbutton{
+        width: 25vw;
+        height: 5vw;
+        border: 2px solid black;
+        font-size: 3vw;
+    }
+    #aboutp{
+        font-size: 3vw;
+    }
+    #aboutimg{
+        width: 20vw;
+    }
+    .twoDesign{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* border: 2px solid red; */
+        row-gap: 2vw;
+    }
+    #design{
+        width: 10vw;
+        /* border: 2px solid red; */
+    }
+    #designh1{
+        font-size: 4vw;
+        /* border: 2px solid red; */
+    }
+    #designp{
+        font-size: 2vw;
+        /* border: 2px solid red; */
+    }
+    #developmentimg{
+        width: 10vw;
+        /* border: 2px solid red; */
+    }
+    #developmenth1{
+        font-size: 4vw;
+        /* border: 2px solid red; */
+    }
+    #developmentp{
+        font-size: 2vw;
+        /* border: 2px solid red; */
+    }
+    .maintenanace{
+        width: 55vw;
+        /* border: 2px solid red; */
+    }
+    #maintenanaceimg{
+        width: 10vw;
+        /* border: 2px solid red; */
+    }
+    #maintenanaceh1{
+        font-size: 4vw;
+        /* border: 2px solid red; */
+    }
+    #maintenanacep{
+        font-size: 2vw;
+        /* border: 2px solid red; */
+    }
+    #iconimg{
+        width: 20vw;
+    }
+}
 .readMore > h1 {
     color: white;
     font-size: 1.5vw;
@@ -374,6 +474,27 @@ a:hover {
 .development > p,
 .maintenanace > p {
     font-size: 0.9vw;
+}
+.designPage>.twoDesign>.design>img{
+    width: 3.5vw;
+    position: absolute;
+    top: 0vw;
+    left: -0.4vw;
+    /* border: 2px solid red; */
+}
+.designPage>.twoDesign>.development>img{
+    width: 3.5vw;
+    position: absolute;
+    top: 0vw;
+    left: -0.4vw;
+    /* border: 2px solid red; */
+}
+.designPage>.maintenanace>img{
+    width: 3.5vw;
+    position: absolute;
+    top: 0vw;
+    left: -0.4vw;
+    /* border: 2px solid red; */
 }
 .maintenanace > p {
     width: 29vw;
