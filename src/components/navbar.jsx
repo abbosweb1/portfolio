@@ -17,6 +17,8 @@ import git from "../assets/git.svg";
 import topPortfolio from "../assets/image 12.png";
 import big from "../assets/Projects.png";
 
+
+
 function Navbar() {
     const [showContact, setShowContact] = useState(false);
     const [message, setMessage] = useState('');
@@ -74,6 +76,9 @@ function Navbar() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
+
+  const [menuOpen, setMenuOpen] = useState(false);
+
     return (
         <>
             <div className="navbarContainer">
@@ -83,10 +88,11 @@ function Navbar() {
                     </div>
                     <div className="navbarRight">
                         <img id='backgroundImg' src={background} alt="" />
-                        <ul>
-                          <li><a href="#about">{t('about')}</a></li>
-                          <li><a href="#skills">{t('skills')}</a></li>
-                          <li><a href="#portfolio">{t('portfolio')}</a></li>
+                        <button className="ShowHide" onClick={() => setMenuOpen(!menuOpen)}>≡</button>
+                        <ul className={menuOpen ? 'menu show' : 'menu'}>
+                            <li><a href="#about">{t('about')}</a></li>
+                            <li><a href="#skills">{t('skills')}</a></li>
+                            <li><a href="#portfolio">{t('portfolio')}</a></li>
                         </ul>
 
                         <button onClick={handleContactClick}>{t('contactMe')}</button>

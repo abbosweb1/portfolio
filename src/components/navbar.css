@@ -12,6 +12,53 @@
     align-items: center;
     justify-content: center;
 }
+
+
+.navbar {
+    position: relative;
+  }
+  
+  .ShowHide {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Menu default holatda */
+  .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* 500px dan kichik bo‘lsa */
+  @media (max-width: 500px) {
+    .ShowHide {
+      display: block;
+    }
+  
+    .menu {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      position: absolute;
+      background: white;
+      top: 40px;
+      right: 0;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+  
+    .menu.show {
+      display: flex;
+    }
+  }
+  
+
+
+
 .navbarLeft {
     width: 50%;
     display: flex;
@@ -472,4 +519,5 @@ button[type="submit"]:hover {
     background: none;
     border: 0.2vw solid white;
     color: white;
+    font-size: 1vw;
 }
